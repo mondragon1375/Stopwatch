@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="56sp"
+        android:gravity="center"
+
+        />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bStart"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="onClickStart"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bStop"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="onClickStop"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bReset"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="onClickReset"/>
+
+</LinearLayout>
